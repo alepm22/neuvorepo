@@ -1,6 +1,13 @@
 function contarPalabras(frase) {
     let palabras=frase.split(" ");
-    return [palabras[0],1]
+    if(palabras.length > 1)
+        {
+            if(palabras[0]==palabras[1])
+                {
+                    return [palabras[0],2];
+                }
+        }
+    return [palabras[0],1];
 
   }
   
